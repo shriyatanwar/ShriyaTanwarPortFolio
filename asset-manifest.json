@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ShriyaTanwarPortFolio/static/css/main.1ed79417.css",
-    "main.js": "/ShriyaTanwarPortFolio/static/js/main.086d7ab2.js",
+    "main.js": "/ShriyaTanwarPortFolio/static/js/main.cc965178.js",
     "static/js/453.0ad176cf.chunk.js": "/ShriyaTanwarPortFolio/static/js/453.0ad176cf.chunk.js",
     "static/media/portfolio.png": "/ShriyaTanwarPortFolio/static/media/portfolio.858e3145318111590cc4.png",
     "static/media/spendTracker.png": "/ShriyaTanwarPortFolio/static/media/spendTracker.e032d5880f1f0991d842.png",
@@ -12,11 +12,11 @@
     "static/media/wearmint.jpeg": "/ShriyaTanwarPortFolio/static/media/wearmint.61c5a14b40e2f48df197.jpeg",
     "index.html": "/ShriyaTanwarPortFolio/index.html",
     "main.1ed79417.css.map": "/ShriyaTanwarPortFolio/static/css/main.1ed79417.css.map",
-    "main.086d7ab2.js.map": "/ShriyaTanwarPortFolio/static/js/main.086d7ab2.js.map",
+    "main.cc965178.js.map": "/ShriyaTanwarPortFolio/static/js/main.cc965178.js.map",
     "453.0ad176cf.chunk.js.map": "/ShriyaTanwarPortFolio/static/js/453.0ad176cf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1ed79417.css",
-    "static/js/main.086d7ab2.js"
+    "static/js/main.cc965178.js"
   ]
 }
