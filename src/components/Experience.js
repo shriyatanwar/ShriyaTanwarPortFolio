@@ -12,7 +12,7 @@ const Experience = () => {
         "Developing and maintaining web applications using React, Java, Python, and MySQL.",
         "Designed, built, and integrated RESTful APIs with frontend components ensuring secure and efficient data flow.",
         "Training and practicing Generative AI concepts including RAG, prompt engineering, embeddings, vector search, and LangChain workflows.",
-        "Built learning projects such as document-based Q\&A systems and semantic search using LLMs and vector databases.",
+        "Built learning projects such as document-based Q&A systems and semantic search using LLMs and vector databases.",
         "Participated in code reviews, debugging, testing, and Agile development processes."
       ]
     },
