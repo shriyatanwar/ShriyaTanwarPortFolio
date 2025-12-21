@@ -41,7 +41,7 @@ const Contact = () => {
     {
       icon: '📧',
       title: 'Email',
-      value: 'shriyatanwar29@example.com',
+      value: 'shriyatanwar29@gmail.com',
       link: 'shriyatanwar29@gmail.com'
     },
     {

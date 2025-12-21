@@ -41,15 +41,15 @@ const About = () => {
               </div>
               <div className="info-item">
                 <span className="info-label">Email:</span>
-                <span className="info-value">your.email@example.com</span>
+                <span className="info-value">Shriyatanwar29@gmail.com</span>
               </div>
               <div className="info-item">
                 <span className="info-label">Location:</span>
-                <span className="info-value">Your City, Country</span>
+                <span className="info-value"> Bengaluru, Karnataka </span>
               </div>
               <div className="info-item">
                 <span className="info-label">Degree:</span>
-                <span className="info-value">Your Degree</span>
+                <span className="info-value">Degree</span>
               </div>
             </div>
 
