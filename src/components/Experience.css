@@ -1,0 +1,430 @@
+.experience {
+  background: var(--bg-primary);
+  padding: 80px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Work Experience Section */
+.zigzag-timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 80px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* Horizontal Timeline Line */
+.zigzag-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg,
+    rgba(102, 126, 234, 0.2) 0%,
+    rgba(236, 72, 153, 0.2) 100%);
+  border-radius: 10px;
+}
+
+/* Animated progress line showing time progression from past to present */
+.zigzag-timeline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg,
+    var(--primary-color) 0%,
+    #ec4899 100%);
+  border-radius: 10px;
+  animation: progressLineHorizontal 2s ease-out forwards;
+}
+
+@keyframes progressLineHorizontal {
+  to {
+    width: 100%;
+  }
+}
+
+/* Timeline Items - Horizontal Layout */
+.timeline-item {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Stagger animation from left (past) to right (present) */
+.timeline-item:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.timeline-item:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.timeline-item:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Remove left/right distinction */
+.timeline-item.left,
+.timeline-item.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Timeline Dot with pulse animation */
+.timeline-dot {
+  width: 18px;
+  height: 18px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  border: 4px solid var(--bg-primary);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  animation: dotPulse 2s infinite, dotAppear 0.5s ease forwards;
+}
+
+/* Stagger dot appearance */
+.timeline-item:nth-child(1) .timeline-dot {
+  animation-delay: 0.3s, 0.3s;
+  opacity: 0;
+}
+
+.timeline-item:nth-child(2) .timeline-dot {
+  animation-delay: 0.6s, 0.6s;
+  opacity: 0;
+}
+
+.timeline-item:nth-child(3) .timeline-dot {
+  animation-delay: 0.9s, 0.9s;
+  opacity: 0;
+}
+
+@keyframes dotAppear {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+@keyframes dotPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 7px rgba(102, 126, 234, 0.6);
+  }
+}
+
+.timeline-item:hover .timeline-dot {
+  background: linear-gradient(135deg, var(--primary-color), #ec4899);
+  transform: translateX(-50%) scale(1.5);
+  box-shadow: 0 0 0 6px rgba(102, 126, 234, 0.5);
+}
+
+/* Timeline Content Card */
+.timeline-content {
+  margin-top: 70px;
+  padding: 25px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 100%;
+}
+
+.timeline-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+/* Period Badge */
+.experience-period {
+  display: inline-block;
+  padding: 5px 12px;
+  background: linear-gradient(135deg, var(--primary-color), #ec4899);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Role and Company */
+.experience-role {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.experience-company {
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.experience-description {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Achievements List */
+.experience-achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.experience-achievements li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 5px;
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.experience-achievements li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Education & Certification Section */
+.edu-cert-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards 1.5s;
+}
+
+.edu-cert-column {
+  position: relative;
+}
+
+.column-title {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.column-title .icon {
+  font-size: 1.8rem;
+}
+
+.edu-cert-card {
+  padding: 25px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.edu-cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .zigzag-timeline {
+    flex-direction: column;
+    padding: 80px 20px 20px 60px;
+    gap: 40px;
+  }
+
+  .zigzag-timeline::before {
+    left: 20px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg,
+      rgba(102, 126, 234, 0.2) 0%,
+      rgba(236, 72, 153, 0.2) 100%);
+  }
+
+  .zigzag-timeline::after {
+    left: 20px;
+    top: auto;
+    bottom: 0;
+    width: 3px;
+    height: 0;
+    background: linear-gradient(180deg,
+      var(--primary-color) 0%,
+      #ec4899 100%);
+    animation: progressLineVertical 2s ease-out forwards;
+  }
+
+  @keyframes progressLineVertical {
+    to {
+      height: 100%;
+    }
+  }
+
+  .timeline-item {
+    align-items: flex-start;
+  }
+
+  .timeline-dot {
+    left: 13px;
+    top: 25px;
+    transform: translateX(0);
+  }
+
+  .timeline-item:nth-child(1) .timeline-dot {
+    animation-delay: 0.3s, 0.3s;
+  }
+
+  .timeline-item:nth-child(2) .timeline-dot {
+    animation-delay: 0.6s, 0.6s;
+  }
+
+  .timeline-item:nth-child(3) .timeline-dot {
+    animation-delay: 0.9s, 0.9s;
+  }
+
+  @keyframes dotAppear {
+    from {
+      opacity: 0;
+      transform: scale(0);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .timeline-item:hover .timeline-dot {
+    transform: scale(1.5);
+  }
+
+  .timeline-content {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .experience-achievements {
+    text-align: left;
+  }
+}
+
+@media (max-width: 968px) {
+  .experience {
+    min-height: auto;
+    padding: 60px 0;
+  }
+
+  .edu-cert-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .column-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .experience {
+    padding: 40px 0;
+  }
+
+  .zigzag-timeline {
+    padding: 60px 10px 10px 40px;
+  }
+
+  .zigzag-timeline::before,
+  .zigzag-timeline::after {
+    left: 12px;
+    width: 2px;
+  }
+
+  .timeline-dot {
+    left: 7px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline-content {
+    padding: 18px;
+  }
+
+  .experience-role {
+    font-size: 1rem;
+  }
+
+  .experience-company {
+    font-size: 0.8rem;
+  }
+
+  .experience-description {
+    font-size: 0.75rem;
+  }
+
+  .experience-achievements li {
+    font-size: 0.7rem;
+  }
+
+  .edu-cert-card {
+    padding: 20px;
+  }
+
+  .column-title {
+    font-size: 1.2rem;
+  }
+}
