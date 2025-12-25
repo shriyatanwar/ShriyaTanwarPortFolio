@@ -20,7 +20,7 @@ const Experience = () => {
       id: 2,
       role: "Software Developer",
       company: "Mechatron Technologies, Ajmer, Rajasthan",
-      period: "March 2024 - June 2025",
+      period: "Jan 2024 - June 2025",
       description: "Developed and maintained full-stack web applications using HTML, CSS, JavaScript, and modern frameworks like React.js for the front-end.",
       achievements: [
         "Built and optimized RESTful APIs and server-side logic using Node.js",
@@ -30,19 +30,6 @@ const Experience = () => {
         "Integrated third-party APIs and payment gateways to enhance application functionality"
       ]
     },
-    {
-      id: 3,
-      role: "Software Developer Trainee",
-      company: "Mechatron Technologies, Ajmer, Rajasthan",
-      period: "January 2024 - March 2024",
-      description: "Assisted in developing interactive web modules using HTML5, CSS3, and JavaScript, ensuring responsive design and optimized performance.",
-      achievements: [
-        "Collaborated with senior developers to understand full-stack application architecture",
-        "Participated in building end-to-end web solutions",
-        "Contributed to front-end enhancement and back-end API integration tasks under guidance",
-        "Followed Agile development practices"
-      ]
-    }
   ];
 
   const education = [
