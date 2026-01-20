@@ -39,7 +39,7 @@ const Projects = () => {
       technologies: ['React.js', 'Node.js', 'MongoDB'],
       image: fitAI,
       link: '#',
-      github: '#',
+      github: 'https://github.com/shriyatanwar/FitAi',
     },
     {
       id: 4,
@@ -49,7 +49,7 @@ const Projects = () => {
       technologies: ['React', 'CSS3', 'Framer Motion'],
       image: portfolio,
       link: '#',
-      github: 'https://github.com/shriyatanwar/FitAi',
+      github:'#' ,
     },
     {
       id: 5,
