@@ -6,9 +6,9 @@
 
 :root {
   /* Light Mode Colors */
-  --primary-color: #6366f1;
-  --secondary-color: #8b5cf6;
-  --accent-color: #ec4899;
+  --primary-color: #5C3D2E;
+  --secondary-color: #8B6355;
+  --accent-color: #A1887F;
   --text-primary: #0f172a;
   --text-secondary: #64748b;
   --bg-primary: #ffffff;
@@ -21,8 +21,8 @@
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-primary: linear-gradient(135deg, #6D4C41 0%, #3E2723 100%);
+  --gradient-secondary: linear-gradient(135deg, #A1887F 0%, #8B6355 100%);
   --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   --gradient-warm: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
 }
@@ -139,12 +139,12 @@ section {
 .btn-primary {
   background: var(--gradient-primary);
   color: white;
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 10px 30px rgba(109, 76, 65, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+  box-shadow: 0 15px 40px rgba(109, 76, 65, 0.5);
 }
 
 .btn-secondary {
@@ -285,11 +285,11 @@ section {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  background: linear-gradient(135deg, #3E2723 0%, #6D4C41 100%);
 }
 
 /* Selection */
 ::selection {
-  background: rgba(102, 126, 234, 0.3);
+  background: rgba(109, 76, 65, 0.3);
   color: var(--text-primary);
 }

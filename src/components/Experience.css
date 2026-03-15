@@ -27,8 +27,8 @@
   width: 100%;
   height: 3px;
   background: linear-gradient(90deg,
-    rgba(102, 126, 234, 0.2) 0%,
-    rgba(236, 72, 153, 0.2) 100%);
+    rgba(109, 76, 65, 0.2) 0%,
+    rgba(161, 136, 127, 0.2) 100%);
   border-radius: 10px;
 }
 
@@ -42,7 +42,7 @@
   height: 3px;
   background: linear-gradient(90deg,
     var(--primary-color) 0%,
-    #ec4899 100%);
+    #A1887F 100%);
   border-radius: 10px;
   animation: progressLineHorizontal 2s ease-out forwards;
 }
@@ -101,7 +101,7 @@
   background: var(--primary-color);
   border-radius: 50%;
   border: 4px solid var(--bg-primary);
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 0 0 3px rgba(109, 76, 65, 0.3);
   position: absolute;
   top: 42px;
   left: 50%;
@@ -139,17 +139,17 @@
 
 @keyframes dotPulse {
   0%, 100% {
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 0 0 3px rgba(109, 76, 65, 0.3);
   }
   50% {
-    box-shadow: 0 0 0 7px rgba(102, 126, 234, 0.6);
+    box-shadow: 0 0 0 7px rgba(109, 76, 65, 0.6);
   }
 }
 
 .timeline-item:hover .timeline-dot {
-  background: linear-gradient(135deg, var(--primary-color), #ec4899);
+  background: linear-gradient(135deg, var(--primary-color), #A1887F);
   transform: translateX(-50%) scale(1.5);
-  box-shadow: 0 0 0 6px rgba(102, 126, 234, 0.5);
+  box-shadow: 0 0 0 6px rgba(109, 76, 65, 0.5);
 }
 
 /* Timeline Content Card */
@@ -167,15 +167,15 @@
 
 .timeline-content:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
-  border-color: rgba(102, 126, 234, 0.3);
+  box-shadow: 0 10px 30px rgba(109, 76, 65, 0.2);
+  border-color: rgba(109, 76, 65, 0.3);
 }
 
 /* Period Badge */
 .experience-period {
   display: inline-block;
   padding: 5px 12px;
-  background: linear-gradient(135deg, var(--primary-color), #ec4899);
+  background: linear-gradient(135deg, var(--primary-color), #A1887F);
   color: white;
   border-radius: 20px;
   font-size: 0.7rem;
@@ -275,8 +275,8 @@
 
 .edu-cert-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
-  border-color: rgba(102, 126, 234, 0.3);
+  box-shadow: 0 10px 30px rgba(109, 76, 65, 0.2);
+  border-color: rgba(109, 76, 65, 0.3);
 }
 
 /* Responsive Design */
@@ -293,8 +293,8 @@
     width: 3px;
     height: 100%;
     background: linear-gradient(180deg,
-      rgba(102, 126, 234, 0.2) 0%,
-      rgba(236, 72, 153, 0.2) 100%);
+      rgba(109, 76, 65, 0.2) 0%,
+      rgba(161, 136, 127, 0.2) 100%);
   }
 
   .zigzag-timeline::after {
@@ -305,7 +305,7 @@
     height: 0;
     background: linear-gradient(180deg,
       var(--primary-color) 0%,
-      #ec4899 100%);
+      #A1887F 100%);
     animation: progressLineVertical 2s ease-out forwards;
   }
 

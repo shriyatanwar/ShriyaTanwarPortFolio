@@ -98,7 +98,7 @@ body.dark-mode .navbar {
   transform: scale(1.05);
   background: var(--gradient-primary);
   border-color: transparent;
-  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 5px 20px rgba(109, 76, 65, 0.3);
 }
 
 .theme-toggle:hover .theme-label {
